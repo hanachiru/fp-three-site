@@ -1,0 +1,66 @@
+:root {
+  --ink: #1a3b38;
+  --muted: #5f7870;
+  --cream: #faf7ed;
+  --mint: #3bc49c;
+  --gold: #ffc445;
+  --pink: #ffdee8;
+  --card: #ffffff;
+  --line: #1a3b38;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #eef5f2;
+    --muted: #a7bbb4;
+    --cream: #13211f;
+    --card: #1c2e2b;
+    --pink: #3a2630;
+    --line: #0a1413;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font: 16px/1.85 "Hiragino Sans", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { text-align: center; margin-bottom: 28px; }
+.logo { font: 900 2rem/1.2 "Hiragino Maru Gothic ProN", "Hiragino Sans", system-ui, sans-serif; letter-spacing: .02em; margin: 8px 0 4px; }
+.logo span:nth-child(5n+1) { color: #ff4a8d; }
+.logo span:nth-child(5n+2) { color: #f0a800; }
+.logo span:nth-child(5n+3) { color: #3f78f5; }
+.logo span:nth-child(5n+4) { color: #2fb487; }
+.logo span:nth-child(5n+5) { color: #a866f5; }
+.tagline { color: var(--muted); margin: 0; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 20px 0 0; }
+nav a {
+  color: var(--ink); text-decoration: none; font-weight: 700; font-size: .9rem;
+  padding: 6px 14px; border: 2px solid var(--line); border-radius: 999px; background: var(--card);
+}
+nav a[aria-current="page"] { background: var(--gold); color: #1a3b38; }
+.card {
+  background: var(--card); border: 3px solid var(--line); border-radius: 22px;
+  padding: 20px; margin: 18px 0; box-shadow: 0 5px 0 var(--line);
+}
+.card.pink { background: var(--pink); }
+h1 { font-size: 1.5rem; line-height: 1.4; margin: 0 0 8px; }
+h2 { font-size: 1.15rem; margin: 0 0 8px; }
+h3 { font-size: 1rem; margin: 18px 0 4px; }
+p { margin: 6px 0; }
+.muted { color: var(--muted); font-size: .9rem; }
+a { color: #1f8f6c; }
+@media (prefers-color-scheme: dark) { a { color: #6fdcb8; } }
+.button {
+  display: inline-block; text-decoration: none; font-weight: 800; color: #1a3b38;
+  background: var(--gold); border: 3px solid var(--line); border-radius: 16px;
+  padding: 10px 18px; box-shadow: 0 4px 0 var(--line); margin-top: 8px; word-break: break-all;
+}
+details { border-top: 2px dashed rgba(127,127,127,.35); padding: 10px 0; }
+details:first-of-type { border-top: 0; }
+summary { cursor: pointer; font-weight: 800; }
+summary::marker { color: var(--mint); }
+ul { padding-left: 1.3em; margin: 6px 0; }
+footer { text-align: center; color: var(--muted); font-size: .85rem; margin-top: 32px; }
