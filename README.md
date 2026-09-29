@@ -1,6 +1,6 @@
 # にゃんとFP！ サポートサイト
 
-FP3級学習アプリ「にゃんとFP！」のサポート・プライバシーポリシー・利用規約ページです。GitHub Pagesで公開しています。
+FP2級・3級学習アプリ「にゃんとFP！」のサポート・プライバシーポリシー・利用規約ページです。GitHub Pagesで公開しています。
 
 - サポート：https://hanachiru.github.io/fp-three-site/
 - プライバシーポリシー：https://hanachiru.github.io/fp-three-site/privacy.html
